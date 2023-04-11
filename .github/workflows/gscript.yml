@@ -28,10 +28,5 @@ jobs: # The jobs that run in this workflow
           body: | # The body of the comment is a message thanking the user for opening the issue.
            Thanks for opening this issue! We'll take a look as soon as possible.
 # Comment on when an issue is closed
-      - name: Comment on issue close
-        uses: peter-evans/close-issue@v3 
-        with:
-          issue-number: ${{ github.event.issue.number }}
-          body: | 
-           this issue is now closed. open it if needed
+
 # Comment on when an users opens the first pull request 
