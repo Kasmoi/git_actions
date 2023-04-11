@@ -96,7 +96,7 @@ To get you started, we used actions to go ahead and made a branch and pull reque
 -->
 
 <details id=2 open>
-<summary><h2>Step 2: Add a job to your workflow file</h2></summary>
+<summary><h2>Step 2: Add a job to your workflows file in .github/workflows</h2></summary>
 
 _Nice work! :tada: You added a workflow file!_
 
