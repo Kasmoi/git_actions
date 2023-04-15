@@ -1,0 +1,13 @@
+name: close
+on: issues
+  types: [closed]
+
+jobs:
+  close_comment_issue:
+    runs-on: ubuntu-latest
+    steps:
+        uses: aws-actions/closed-issue-message@v1
+        with:
+            # These inputs are both required
+            repo-token: "${{ secrets.GITHUB_TOKEN }}"
+            message: "Comments on closed issues are hard for our team to see." 
